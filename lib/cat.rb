@@ -1,9 +1,10 @@
 class Cat
   attr_accessor :name
+  attr_reader :mood
   
   def initialize(name)
     @name = name 
-    #raise NoMethodError if name != "Crookshanks"
+    @mood = "nervous"
   end
   
   def mood(mood)
